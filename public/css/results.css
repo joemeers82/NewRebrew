@@ -1,9 +1,11 @@
-#results{display:;}
+
 ul{
 	padding-top:200px;
 	width:80%;
 	margin:0 auto;
-	border:solid;}
+	border:solid;
+	
+}
 li{
 	display:block;
 	padding-bottom:50px;
@@ -11,6 +13,7 @@ li{
 	border:solid thin lightgrey;
 	width:90%;
 	margin:0 auto;
+	
 }
 li a{
 	text-decoration:none;

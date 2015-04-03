@@ -5,6 +5,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/nav.css">
 
@@ -25,14 +26,7 @@
 	</div>
 	
 	
-			<%beerList=''%>
-			<%if(beerList.length > 1){%>
-			<ul>
-			<% beerList.forEach(function(beer) { %>
-	      		<li class="list-group-item"><a class="list-item" href='search/beer/<%=beer.id%>'> <%=beer.name %></li>
-	        <%}) %>
-	       </ul>
-	        <%}%>
+		<div id='craftbeers'>Craft beers from around the world</div>
 	    
 	
 	

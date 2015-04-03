@@ -1,3 +1,19 @@
+html{height:100%;}
+body{
+	background-image:url('/images/beerflight.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#craftbeers{
+	font-family: 'Raleway', sans-serif;
+	font-size:5em;
+	color:white;
+	padding-top:20%;
+	width:90%;
+	margin:auto;
+	text-align:center;
+
+}
 .search{
 	border:solid red;
 	margin:0 auto;
@@ -16,3 +32,9 @@ form{
 	width:60%;
 }
 
+@media screen and (max-width: 400px) {
+	body img{
+			max-width:100%;
+	}	
+
+}
