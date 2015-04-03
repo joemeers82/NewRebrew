@@ -31,7 +31,12 @@
 				<%}%>
 				<li class="listedBeers">
 					
-					<a><img src="<%=val%>"/><%=beer.name%></a>
+					
+						<%if(!val){%>		
+							<a><img src="images/noImage.png"/><%=beer.name%></a>
+						<%}else{%>
+							<a><img src='<%=val%>'/><%=beer.name%></a>
+						<%};%>
 					<div class="aboutBeer">
 						<%=beer.name%><hr>
 						<%=beer.abv%>
