@@ -1,0 +1,18 @@
+.search{
+	border:solid red;
+	margin:0 auto;
+	margin-top:30%;
+	width:50%;
+
+}
+form{
+	width:50%;
+	margin:0 auto;
+}
+
+#rock{
+	height:800px;
+	border:solid green;
+	width:60%;
+}
+

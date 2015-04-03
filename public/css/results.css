@@ -1,0 +1,31 @@
+#results{display:;}
+ul{
+	padding-top:200px;
+	width:80%;
+	margin:0 auto;
+	border:solid;}
+li{
+	display:block;
+	padding-bottom:50px;
+	list-style:none;
+	border:solid thin lightgrey;
+	width:90%;
+	margin:0 auto;
+}
+li a{
+	text-decoration:none;
+	color:grey;
+}
+li a:hover{
+	cursor:pointer;
+
+}
+li div{
+	display:none;
+}
+li img{
+	max-width:10%;
+	border-radius:100%;
+	border:solid thin lightgrey;
+}
+

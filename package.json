@@ -1,0 +1,19 @@
+{
+  "name": "rebrew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "brewerydb-node": "0.0.1",
+    "ejs": "^2.3.1",
+    "express": "^4.12.3",
+    "html": "0.0.9",
+    "request": "^2.54.0"
+  }
+}

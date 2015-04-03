@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>ReBrew</title>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/nav.css">
+
+
+</head>
+<body>
+	<div class="stickyNav">
+	
+		<a href="/"><div id="circle"><img src="images/ipa.png"/></div></a>
+		
+		<div id="title">ReBrew</div>
+	
+		<form action="/search">
+			<input type="text" name="searchBeer"placeholder="Search by Beer"></input>
+			<input type="submit"></input>
+		</form>
+	
+	</div>
+	
+	
+			<%beerList=''%>
+			<%if(beerList.length > 1){%>
+			<ul>
+			<% beerList.forEach(function(beer) { %>
+	      		<li class="list-group-item"><a class="list-item" href='search/beer/<%=beer.id%>'> <%=beer.name %></li>
+	        <%}) %>
+	       </ul>
+	        <%}%>
+	    
+	
+	
+	
+	
+		
+	</body>
+</html>

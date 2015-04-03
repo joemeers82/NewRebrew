@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/results.css">
+
+</head>
+<body>
+<div class="stickyNav">
+	
+		<a href="/"><div id="circle"><img src="images/ipa.png"/></div></a>
+		
+		<div id="title">ReBrew</div>
+	
+		<form action="/search">
+			<input type="text" name="searchBeer"placeholder="Search by Beer"></input>
+			<input type="submit"></input>
+		</form>
+	
+	</div>
+<div id="results">
+	
+		<ul>
+			<% var details%>
+			<% details.forEach(function(beer) { %>
+	      		<%for(var key in beer.labels){%>
+					<%var val =beer.labels[key];%>
+				<%}%>
+				<li class="listedBeers">
+					
+					<a><img src="<%=val%>"/><%=beer.name%></a>
+					<div class="aboutBeer">
+						<%=beer.name%><hr>
+						<%=beer.abv%>
+						<a class="closeAbout">Hide</a>
+					</div>	
+				</li>
+	        <%});%>
+	    </ul>
+	   
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/beer.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/*NAVIGATION BAR*/
+.stickyNav{
+    background-color:rgb(250,250,250);
+    width:100%;
+    height:100px;
+    position:fixed;
+	top:0;
+    left:0;
+    border-bottom:solid 8px rgb(208,208,208);
+    text-align:left;
+    z-index: 1;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+#circle{
+    height:150px;
+    width:150px;
+    position:absolute;
+    border:solid thin grey;
+    border-radius:100%;
+    overflow:hidden;
+    background-color:white;
+    margin-top:-25px;
+    margin-left:4%;
+    display:inline;
+	text-align:center;
+}
+form{
+	display:inline;
+}
+#title{
+	display:inline;
+	font-size:6em;
+	margin-left:20%;
+}
+#navLinks{
+	display:inline;
+	margin-right:4%;
+}
+#circle img{
+    max-width:50%;
+    padding-top:15%;
+}
+nav a{
+    color:rgb(199,249,220);
+    text-decoration:none;
+}
+@media screen and (max-width: 1000px) {
+	#title{
+		margin-left:40%;
+		font-size:3em;
+	}
+
+}
