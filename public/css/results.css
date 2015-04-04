@@ -1,10 +1,18 @@
+form{
+	float:right;
+	width:40%;
+	margin-top:-70px;
+}
+input[type="text"]{
+	width:60%;
+	display:inline;
+}
 
 ul{
 	padding-top:200px;
 	width:80%;
 	margin:0 auto;
 	border:solid;
-	
 }
 li{
 	display:block;
@@ -13,7 +21,6 @@ li{
 	border:solid thin lightgrey;
 	width:90%;
 	margin:0 auto;
-	
 }
 li a{
 	text-decoration:none;
@@ -21,7 +28,7 @@ li a{
 }
 li a:hover{
 	cursor:pointer;
-
+	text-decoration:none;
 }
 li div{
 	display:none;
@@ -31,4 +38,18 @@ li img{
 	border-radius:100%;
 	border:solid thin lightgrey;
 }
+.clear{clear:both;}
+.aboutBeer img{
+	max-width:30%;
+	border-radius:100%;
+	border:solid thin lightgrey;
+}
+.listedBeers{
+	font-family: 'Raleway', sans-serif;
+}
+.listedBeers img{
+	text-align:center;
+}
+
+
 

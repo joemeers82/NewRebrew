@@ -10,8 +10,9 @@
     text-align:left;
     z-index: 1;
     font-family: 'Roboto Condensed', sans-serif;
-    
+
 }
+
 #circle{
     height:150px;
     width:150px;
@@ -26,7 +27,13 @@
 	text-align:center;
 }
 form{
-	display:inline;
+    float:right;
+    width:40%;
+    margin-top:-70px;
+}
+input[type="text"]{
+    width:60%;
+    display:inline;
 }
 #title{
 	display:inline;
@@ -36,6 +43,11 @@ form{
 #navLinks{
 	display:inline;
 	margin-right:4%;
+}
+form{
+    display:inline;
+    margin-bottom:5%;
+    margin-left:20%;
 }
 #circle img{
     max-width:50%;
