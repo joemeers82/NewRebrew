@@ -1,18 +1,11 @@
-form{
-	float:right;
-	width:40%;
-	margin-top:-70px;
+body{
+	background-image:url('/images/tweed.png');
+	
 }
-input[type="text"]{
-	width:60%;
-	display:inline;
-}
-
 ul{
 	padding-top:200px;
 	width:80%;
 	margin:0 auto;
-	border:solid;
 }
 li{
 	display:block;
@@ -21,6 +14,8 @@ li{
 	border:solid thin lightgrey;
 	width:90%;
 	margin:0 auto;
+	background-color:white;
+
 }
 li a{
 	text-decoration:none;
