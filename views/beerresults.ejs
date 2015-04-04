@@ -8,48 +8,72 @@
 
 </head>
 <body>
-<div class="stickyNav">
-	
-		<a href="/"><div id="circle"><img src="images/ipa.png"/></div></a>
-		
-		<div id="title">ReBrew</div>
-		
-		<form action="/search">
-			<input  class="form-control" type="text" name="searchBeer"placeholder="Search by Beer"></input>
-			<button type="submit" class="btn btn-default">Search</button>
-		</form>
-	
-</div>
+	<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '764880970274127',
+		      xfbml      : true,
+		      version    : 'v2.3'
+		    });
+		  };
 
-<div id="results">
-	
-		<ul>
-			<% var details%>
-			<% details.forEach(function(beer) { %>
-	      		<%for(var key in beer.labels){%>
-					<%var val =beer.labels[key];%>
-				<%}%>
-				
-				<li class="listedBeers">
-					
-						<%if(!val){%>		
-							<a><img src="images/noImage.png"/><%=beer.name%></a>
-						<%}else{%>
-							<a><img src='<%=val%>'/><%=beer.name%></a>
-						<%};%>
-					<div class="aboutBeer">
-						<img src='<%=val%>'/><hr>
-						
-						<%=beer.description%><br>
-						ABV:<%=beer.abv%>%
-						
-					</div>	
-				</li>
-	        <%});%>
-	    </ul>
-	   
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<div class="stickyNav">
+		
+			<a href="/"><div id="circle"><img src="images/ipa.png"/></div></a>
+			
+			<div id="title">ReBrew</div>
+			
+			<form action="/search">
+				<input  class="form-control" type="text" name="searchBeer"placeholder="Search by Beer"></input>
+				<button type="submit" class="btn btn-default">Search</button>
+			</form>
+		
 	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/beer.js"></script>
+
+	<div id="results">
+		
+			<ul>
+				<% var details%>
+				<% details.forEach(function(beer) { %>
+		      		<%for(var key in beer.labels){%>
+						<%var val =beer.labels[key];%>
+					<%}%>
+					
+					<li class="listedBeers">
+						
+							<%if(!val){%>		
+								<a><img src="images/noImage.png"/><%=beer.name%></a>
+							<%}else{%>
+								<a><img src='<%=val%>'/><%=beer.name%></a>
+							<%};%>
+						<div class="aboutBeer">
+							<img src='<%=val%>'/><hr>
+							
+							<%=beer.description%><br>
+							ABV:<%=beer.abv%>%
+							
+								<div class="fb-like"
+								  data-share="true"
+								  data-width="450"
+								  data-show-faces="true">
+								</div>
+							
+						</div>	
+					</li>
+		        <%});%>
+		    </ul>
+		   
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/beer.js"></script>
 </body>
 </html>
