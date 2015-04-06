@@ -17,6 +17,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req,res){
 	res.render('index.ejs');
 });
+app.get('/error',function(req,res){
+  res.render('error.ejs');
+});
 
 
 
@@ -25,7 +28,9 @@ app.get('/search',function(req,res){
 	
     var url="http://api.brewerydb.com/v2/search?key="+beerDBkey+"&type=beer&q="+query;
 		request(url,function(error,response,body){
-      if(!error){
+      if(query==''){
+        res.render('error.ejs');
+      }else{
         var beerData=JSON.parse(body).data;
         res.render('beerresults.ejs',{details: beerData});
       }
