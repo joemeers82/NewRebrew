@@ -3,17 +3,21 @@ body{
 	
 }
 ul{
-	padding-top:200px;
 	width:80%;
-	margin:0 auto;
+	margin:0;
+	padding:0;
+	display:inline-block;
+}
+#results{
+	margin-top:20%;
+	text-align:center;
 }
 li{
-	display:block;
-	padding-bottom:50px;
+	padding-top:4%;
+	padding-bottom:6%;
 	list-style:none;
 	border:solid thin lightgrey;
-	width:90%;
-	margin:0 auto;
+	width:100%;
 	background-color:white;
 
 }
@@ -33,7 +37,9 @@ li img{
 	border-radius:100%;
 	border:solid thin lightgrey;
 }
-.clear{clear:both;}
+.aboutBeer{
+	text-align:center;
+}
 .aboutBeer img{
 	max-width:30%;
 	border-radius:100%;
@@ -46,5 +52,53 @@ li img{
 	text-align:center;
 }
 
+.responsive-form{
+	display:none;
+}
+@media screen and (max-width:480px){
+	
+	.responsive-form{
+		background-image:url('/images/tweed.png');
+		display:block;
+		width:100%;
+		padding-bottom:2%;
+		padding-top:6%;
+		margin-top:20%;
+		margin-bottom:8%;
+		text-align:center;
+	}
+
+	
+	li div{
+		padding-top:2%;
+	}
+	li img{
+		max-width:25%;
+	}
+	.aboutBeer img{
+		max-width:70%;
+	}
+	#results{
+		margin-top:50%;
+		max-width:100%;
+		text-align:center;
+		
+	}
+}
+
+@media (min-width:480px) and (max-width:860px){
+	.responsive-form{
+		background-image:url('/images/tweed.png');
+		display:block;
+		width:100%;
+		margin-top:5%;
+		padding-top:10%;
+		padding-bottom:1%;
+		text-align:center;
+		
+	}
+
+	
+}
 
 
